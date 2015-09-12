@@ -166,11 +166,12 @@
 		3D23B8BA1AABB09000A283EA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Isaac Mercer";
 				TargetAttributes = {
 					3D23B8C11AABB09000A283EA = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = YBYHDBC82A;
 					};
 					3D23B8DD1AABB09000A283EA = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -178,7 +179,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3D23B8BD1AABB09000A283EA /* Build configuration list for PBXProject "ScoreOnline" */;
+			buildConfigurationList = 3D23B8BD1AABB09000A283EA /* Build configuration list for PBXProject "ScoreOnline Scorer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -287,6 +288,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -349,9 +351,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Isaac Mercer (YBYHDBC82A)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Isaac Mercer (YBYHDBC82A)";
 				INFOPLIST_FILE = ScoreOnline/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "info.scoreonline.$(PRODUCT_NAME:rfc1034identifier)Scorer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "23d1684e-c2c8-4513-96c5-25ee3bf16a78";
 			};
 			name = Debug;
 		};
@@ -359,9 +367,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Isaac Mercer (YBYHDBC82A)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Isaac Mercer (YBYHDBC82A)";
 				INFOPLIST_FILE = ScoreOnline/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "info.scoreonline.$(PRODUCT_NAME:rfc1034identifier)Scorer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "23d1684e-c2c8-4513-96c5-25ee3bf16a78";
 			};
 			name = Release;
 		};
@@ -379,6 +393,7 @@
 				);
 				INFOPLIST_FILE = ScoreOnlineTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "info.scoreoline.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScoreOnline.app/ScoreOnline";
 			};
@@ -394,6 +409,7 @@
 				);
 				INFOPLIST_FILE = ScoreOnlineTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "info.scoreoline.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScoreOnline.app/ScoreOnline";
 			};
@@ -402,7 +418,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3D23B8BD1AABB09000A283EA /* Build configuration list for PBXProject "ScoreOnline" */ = {
+		3D23B8BD1AABB09000A283EA /* Build configuration list for PBXProject "ScoreOnline Scorer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D23B8E61AABB09000A283EA /* Debug */,
@@ -418,6 +434,7 @@
 				3D23B8EA1AABB09000A283EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D23B8EB1AABB09000A283EA /* Build configuration list for PBXNativeTarget "ScoreOnlineTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +443,7 @@
 				3D23B8ED1AABB09000A283EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

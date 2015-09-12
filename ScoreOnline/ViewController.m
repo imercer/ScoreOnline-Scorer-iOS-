@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSString *scorer = @"http://app.scoreonline.info/stripped_scorer.php";
+    NSURL *scorerurl = [NSURL URLWithString:scorer];
+    NSURLRequest *requestObjscorer = [NSURLRequest requestWithURL:scorerurl];
+    [_scorer loadRequest:requestObjscorer];
+    [super viewDidLoad];
 }
 
 - (void)didReceiveMemoryWarning {
